@@ -13,7 +13,8 @@
             <div class="post archives">
                 <ul>
                 {% for article in month_group %}
-                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a> 
+                    <p> {{ article.summary }} </p>
                 {% endfor %}
                 </ul>
             </div>
